@@ -1,0 +1,23 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "Weather app with javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nasa28/Weather_App.git"
+  },
+  "author": "Chinasa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nasa28/Weather_App/issues"
+  },
+  "homepage": "https://github.com/Nasa28/Weather_App#readme",
+  "devDependencies": {
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
