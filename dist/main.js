@@ -696,7 +696,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/styles.css */ \"./src/assets/css/styles.css\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n\n\n\n\n//# sourceURL=webpack://weather_app/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/styles.css */ \"./src/assets/css/styles.css\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n\n\n\nasync function fetchData(){\n  const response = await fetch()\n    const result = await response.json();\n\n    const city = result.name\n    const temp = result.main.temp\n    const description = result.weather[0].description\n    const humidity = result.main.humidity\n    const wind = result.wind.speed\n    console.log(city, temp, description, humidity, wind);\n}\n    fetchData()\n\n//# sourceURL=webpack://weather_app/./src/index.js?");
 
 /***/ })
 
