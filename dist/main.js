@@ -690,13 +690,33 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
 
 /***/ }),
 
+/***/ "./src/data.js":
+/*!*********************!*\
+  !*** ./src/data.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ fetchData)\n/* harmony export */ });\n/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dom */ \"./src/dom.js\");\n\n\nasync function fetchData(){\n  const url = `https://api.openweathermap.org/data/2.5/weather?q=${_dom__WEBPACK_IMPORTED_MODULE_0__.city.value}&appid=&units=metric`;\n\n   const response = await fetch(url, {mode: 'cors'})\n    const data = await response.json();\n    const cityValue = data.name\n    const tempValue = data.main.temp\n    const descValue = data.weather[0].description\n    const humidityValue = data.main.humidity\n    const windValue= data.wind.speed\n    const iconValue = data.weather[0].icon\n    \n    _dom__WEBPACK_IMPORTED_MODULE_0__.cityName.innerHTML = `${cityValue}`\n    _dom__WEBPACK_IMPORTED_MODULE_0__.temp.innerHTML = `${tempValue} °C`\n    _dom__WEBPACK_IMPORTED_MODULE_0__.desc.innerHTML =  descValue.toUpperCase()\n    _dom__WEBPACK_IMPORTED_MODULE_0__.humidity.innerHTML = `HUMIDITY: ${humidityValue}%`\n    _dom__WEBPACK_IMPORTED_MODULE_0__.wind.innerHTML = `WIND SPEED: ${windValue}mph`\n    _dom__WEBPACK_IMPORTED_MODULE_0__.icons.src =`https://openweathermap.org/img/wn/${iconValue}.png`\n\n}\n\n//# sourceURL=webpack://weather_app/./src/data.js?");
+
+/***/ }),
+
+/***/ "./src/dom.js":
+/*!********************!*\
+  !*** ./src/dom.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"search\": () => (/* binding */ search),\n/* harmony export */   \"city\": () => (/* binding */ city),\n/* harmony export */   \"temp\": () => (/* binding */ temp),\n/* harmony export */   \"humidity\": () => (/* binding */ humidity),\n/* harmony export */   \"wind\": () => (/* binding */ wind),\n/* harmony export */   \"desc\": () => (/* binding */ desc),\n/* harmony export */   \"cityName\": () => (/* binding */ cityName),\n/* harmony export */   \"icons\": () => (/* binding */ icons)\n/* harmony export */ });\n\nconst search = document.querySelector('.search')\nconst city= document.querySelector('.search-input')\nconst temp = document.querySelector('.temp')\nconst  humidity = document.querySelector('.humidity')\nconst wind = document.querySelector('.wind')\nconst desc = document.querySelector('.desc')\nconst cityName = document.querySelector('.city')\nconst icons = document.querySelector('.icon')\n\n\n//# sourceURL=webpack://weather_app/./src/dom.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/styles.css */ \"./src/assets/css/styles.css\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n\n\nconst search = document.querySelector('.search')\nconst city= document.querySelector('.search-input')\nconst temp = document.querySelector('.temp')\nconst  humidity = document.querySelector('.humidity')\nconst wind = document.querySelector('.wind')\nconst desc = document.querySelector('.desc')\nconst cityName = document.querySelector('.city')\nconst icons = document.querySelector('.icon')\n\nasync function fetchData(){\n  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.value}&appid=&units=metric`;\n\n   const response = await fetch(url, {mode: 'cors'})\n    const data = await response.json();\n    const cityValue = data.name\n    const tempValue = data.main.temp\n    const descValue = data.weather[0].description\n    const humidityValue = data.main.humidity\n    const windValue= data.wind.speed\n    const iconValue = data.weather[0].icon\n    \n    cityName.innerHTML = `${cityValue}`\n    temp.innerHTML = `${tempValue} °C`\n    desc.innerHTML =  descValue.toUpperCase()\n    humidity.innerHTML = `HUMIDITY: ${humidityValue}%`\n    wind.innerHTML = `WIND SPEED: ${windValue}mph`\n    icons.src =`https://openweathermap.org/img/wn/${iconValue}.png`\n\n}\n\nsearch.addEventListener('click', ()=>{\n  fetchData()\n})\n\n//# sourceURL=webpack://weather_app/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/styles.css */ \"./src/assets/css/styles.css\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./data */ \"./src/data.js\");\n/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dom */ \"./src/dom.js\");\n\n\n\n\n\n\n_dom__WEBPACK_IMPORTED_MODULE_3__.search.addEventListener('click', ()=>{\n  (0,_data__WEBPACK_IMPORTED_MODULE_2__.default)()\n})\n\n//# sourceURL=webpack://weather_app/./src/index.js?");
 
 /***/ })
 
