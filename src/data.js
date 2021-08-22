@@ -1,7 +1,7 @@
 import * as dom from './dom';
 
 export default async function fetchData(){
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${dom.city.value}&appid=&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${dom.city.value || "enugu"}&appid=&units=metric`;
 
    const response = await fetch(url, {mode: 'cors'})
     const data = await response.json();

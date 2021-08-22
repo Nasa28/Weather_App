@@ -11,3 +11,4 @@ dom.city.addEventListener("keyup", (event)=>{
   if(event.key === "Enter")
   fetchData()
 })
+fetchData()
