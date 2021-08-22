@@ -4,3 +4,10 @@
   box-sizing: border-box;
 }
 
+.temp-div{
+  margin: 20px;
+}
+
+.temp{
+  padding: 20px;
+}
