@@ -18,5 +18,5 @@ export default async function fetchData(){
     dom.humidity.innerHTML = `HUMIDITY: ${humidityValue}%`
     dom.wind.innerHTML = `WIND SPEED: ${windValue}mph`
     dom.icons.src =`https://openweathermap.org/img/wn/${iconValue}.png`
-
+  document.querySelector('.weather').classList.remove("loading")
 }

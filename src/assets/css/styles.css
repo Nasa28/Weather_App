@@ -11,3 +11,7 @@
 .temp{
   padding: 20px;
 }
+
+.weather.loading{
+  display: none;
+}
