@@ -1,44 +1,43 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
-  background-image:
-    url('../images/bg.jpeg');
+body {
+  background-image: url('../images/bg.jpeg');
   color: aliceblue;
-  font-size:larger;
+  font-size: larger;
 }
 
-.temp-div{
+.temp-div {
   margin: 20px;
 }
 
-.temp{
+.temp {
   padding: 20px;
 }
 
-.weather{
+.weather {
   width: fit-content;
-  height: fit-content;
   border: 2px solid blue;
   padding: 70px;
   margin: 0 auto;
-  background-color:rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.search-input{
+.search-input {
   border: none;
   margin: 0 auto;
   border-radius: 5px;
   padding: 5px;
 }
-.weather.loading{
+
+.weather.loading {
   visibility: hidden;
 }
 
-.converter{
+.converter {
   margin-right: 10px;
 }
 
