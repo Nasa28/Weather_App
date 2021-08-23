@@ -40,10 +40,9 @@ export default async function fetchData(){
 
   }catch (error){
     if(error){
-      dom.errors.innerHTML = `${dom.city.value.toUpperCase()}
-       is not a valid City name
+      dom.errors.innerHTML = `Enter a valid City name
        `
-      setTimeout("location.reload(true);",1500);
+      setTimeout("location.reload(true);",2000);
     }
   }
   
