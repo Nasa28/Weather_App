@@ -13,5 +13,9 @@
 }
 
 .weather.loading{
-  display: none;
+  visibility: hidden;
+}
+
+.converter{
+  margin-right: 10px;
 }
