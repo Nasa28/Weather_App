@@ -1,6 +1,6 @@
 import * as dom from './dom';
 
-const fetchData = async () => {
+export default async function fetchData() {
   const apikey = 'bc92c530991c288d75d5cf2407507597';
   const location = dom.city.value || 'enugu';
   const url = `
@@ -45,6 +45,4 @@ const fetchData = async () => {
       setTimeout(location.reload(true), 2000);
     }
   }
-};
-
-export default fetchData();
+}
