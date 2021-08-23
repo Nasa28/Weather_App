@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./api.js":
+/*!****************!*\
+  !*** ./api.js ***!
+  \****************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"apikey\": () => (/* binding */ apikey)\n/* harmony export */ });\nconst apikey = \"bc92c530991c288d75d5cf2407507597\"\n\n//# sourceURL=webpack://weather_app/./api.js?");
+
+/***/ }),
+
 /***/ "./node_modules/@popperjs/core/lib/createPopper.js":
 /*!*********************************************************!*\
   !*** ./node_modules/@popperjs/core/lib/createPopper.js ***!
@@ -606,7 +616,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"*{\\n  padding: 0;\\n  margin: 0;\\n  box-sizing: border-box;\\n}\\n\\n.temp-div{\\n  margin: 20px;\\n}\\n\\n.temp{\\n  padding: 20px;\\n}\\n\\n.weather.loading{\\n  visibility: hidden;\\n}\\n\\n.converter{\\n  margin-right: 10px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://weather_app/./src/assets/css/styles.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../images/bg.jpeg */ \"./src/assets/images/bg.jpeg\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(___CSS_LOADER_URL_IMPORT_0___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"*{\\n  padding: 0;\\n  margin: 0;\\n  box-sizing: border-box;\\n}\\n\\nbody{\\n  background-image:\\n    url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n  color: aliceblue;\\n  font-size:larger;\\n}\\n\\n.temp-div{\\n  margin: 20px;\\n}\\n\\n.temp{\\n  padding: 20px;\\n}\\n\\n.weather{\\n  width: fit-content;\\n  height: fit-content;\\n  border: 2px solid blue;\\n  padding: 70px;\\n  margin: 0 auto;\\n  background-color:rgba(0, 0, 0, 0.8);\\n}\\n\\n.weather.loading{\\n  visibility: hidden;\\n}\\n\\n/* body::after{\\n  visibility: visible;\\n  content: url('../images/bg.jpeg');\\n  contain: layout;\\n  /* background: url('../images/bg.jpeg'); */\\n/* } */ \\n\\n/* body::after {\\n  content: \\\"\\\";\\n  position: fixed;\\n  top: 0;\\n  left: 0;\\n  height: 100%;\\n  width: 100%;\\n  z-index: -1;\\n  background-image:\\n    url('../images/bg.jpeg');\\n  background-position: center;\\n  background-size: cover;\\n  background-repeat: no-repeat;\\n} */\\n\\n.converter{\\n  margin-right: 10px;\\n}\\n\\n.icon {\\n  width: 100px;\\n  height: 70px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://weather_app/./src/assets/css/styles.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -617,6 +627,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module) => {
 
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (cssWithMappingToString) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join(\"\");\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === \"string\") {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, \"\"]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack://weather_app/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  }\n\n  if (!url) {\n    return url;\n  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n\n\n  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack://weather_app/./node_modules/css-loader/dist/runtime/getUrl.js?");
 
 /***/ }),
 
@@ -696,7 +716,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ fetchData)\n/* harmony export */ });\n/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dom */ \"./src/dom.js\");\n\n\nasync function fetchData(){\n  \n  const location= _dom__WEBPACK_IMPORTED_MODULE_0__.city.value ||'enugu'\n  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apikey}&units=metric`;\n\n try{ const response = await fetch(url, {mode: 'cors'})\n    const data = await response.json();\n    const cityValue = data.name\n    const tempValue = data.main.temp.toFixed(0)\n    const descValue = data.weather[0].description\n    const humidityValue = data.main.humidity\n    const windValue= data.wind.speed\n    const iconValue = data.weather[0].icon\n    _dom__WEBPACK_IMPORTED_MODULE_0__.cityName.textContent = `${cityValue}`\n    _dom__WEBPACK_IMPORTED_MODULE_0__.temp.textContent = `${tempValue} °C`\n    _dom__WEBPACK_IMPORTED_MODULE_0__.desc.textContent  =  descValue.toUpperCase()\n    _dom__WEBPACK_IMPORTED_MODULE_0__.humidity.textContent  = `HUMIDITY: ${humidityValue}%`\n    _dom__WEBPACK_IMPORTED_MODULE_0__.wind.textContent  = `WIND SPEED: ${windValue}mph`\n    _dom__WEBPACK_IMPORTED_MODULE_0__.icons.src =`https://openweathermap.org/img/wn/${iconValue}.png`\n    document.querySelector('.weather').classList.remove(\"loading\");\n\n    \n    _dom__WEBPACK_IMPORTED_MODULE_0__.convert.addEventListener(\"click\", ()=>{\n      if(_dom__WEBPACK_IMPORTED_MODULE_0__.temp.textContent.includes(\"°F\")){\n        _dom__WEBPACK_IMPORTED_MODULE_0__.temp.textContent = `${tempValue} °C`\n      }\n    })\n\n    _dom__WEBPACK_IMPORTED_MODULE_0__.converter.addEventListener(\"click\", ()=>{\n      if( _dom__WEBPACK_IMPORTED_MODULE_0__.temp.textContent.includes(\"°C\")) \n      _dom__WEBPACK_IMPORTED_MODULE_0__.temp.textContent = `${Math.floor(tempValue *1.8 + 32)} °F`              \n    })\n\n  }catch (error){\n    if(error){\n      _dom__WEBPACK_IMPORTED_MODULE_0__.errors.innerHTML = `${_dom__WEBPACK_IMPORTED_MODULE_0__.city.value.toUpperCase()} is not a valid City name`\n      setTimeout(\"location.reload(true);\",1500);\n    }\n  }\n  \n}\n\n\n\n\n//# sourceURL=webpack://weather_app/./src/data.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ fetchData)\n/* harmony export */ });\n/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dom */ \"./src/dom.js\");\n/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api */ \"./api.js\");\n\n\nasync function fetchData(){\n  \n  const location= _dom__WEBPACK_IMPORTED_MODULE_0__.city.value ||'enugu'\n  const url = `\n  https://api.openweathermap.org/data/2.5/weather?q=\n  ${location}&appid=${_api__WEBPACK_IMPORTED_MODULE_1__.apikey}&units=metric\n  `;\n\n try{ const response = await fetch(url, {mode: 'cors'})\n    const data = await response.json();\n    const cityValue = data.name\n    const tempValue = data.main.temp.toFixed(0)\n    const descValue = data.weather[0].description\n    const humidityValue = data.main.humidity\n    const windValue= data.wind.speed\n    const iconValue = data.weather[0].icon\n    _dom__WEBPACK_IMPORTED_MODULE_0__.cityName.textContent = `${cityValue}`\n    _dom__WEBPACK_IMPORTED_MODULE_0__.temp.textContent = `${tempValue} °C`\n    _dom__WEBPACK_IMPORTED_MODULE_0__.desc.textContent  =  descValue.toUpperCase()\n    _dom__WEBPACK_IMPORTED_MODULE_0__.humidity.textContent  = `HUMIDITY: ${humidityValue}%`\n    _dom__WEBPACK_IMPORTED_MODULE_0__.wind.textContent  = `WIND SPEED: ${windValue}mph`\n    _dom__WEBPACK_IMPORTED_MODULE_0__.icons.src =`https://openweathermap.org/img/wn/${iconValue}.png`\n    document.querySelector('.weather').classList.remove(\"loading\");\n    \n    const img=`url('https://source.unsplash.com/1600x900/?${cityValue}')\n    `;\n    document.body.style.backgroundImage = img\n    \n    _dom__WEBPACK_IMPORTED_MODULE_0__.convert.addEventListener(\"click\", ()=>{\n      if(_dom__WEBPACK_IMPORTED_MODULE_0__.temp.textContent.includes(\"°F\")){\n        _dom__WEBPACK_IMPORTED_MODULE_0__.temp.textContent = `${tempValue} °C`\n      }\n    })\n\n    _dom__WEBPACK_IMPORTED_MODULE_0__.converter.addEventListener(\"click\", ()=>{\n      if( _dom__WEBPACK_IMPORTED_MODULE_0__.temp.textContent.includes(\"°C\")) \n      _dom__WEBPACK_IMPORTED_MODULE_0__.temp.textContent = `${Math.floor(tempValue *1.8 + 32)} °F`              \n    })\n\n  }catch (error){\n    if(error){\n      _dom__WEBPACK_IMPORTED_MODULE_0__.errors.innerHTML = `${_dom__WEBPACK_IMPORTED_MODULE_0__.city.value.toUpperCase()}\n       is not a valid City name\n       `\n      setTimeout(\"location.reload(true);\",1500);\n    }\n  }\n  \n}\n\n\n\n\n//# sourceURL=webpack://weather_app/./src/data.js?");
 
 /***/ }),
 
@@ -716,7 +736,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/styles.css */ \"./src/assets/css/styles.css\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dom */ \"./src/dom.js\");\n/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ \"./src/data.js\");\n\n\n\n\n\n\n\n_dom__WEBPACK_IMPORTED_MODULE_2__.search.addEventListener('click', ()=>{\n  \n  (0,_data__WEBPACK_IMPORTED_MODULE_3__.default)()\n   _dom__WEBPACK_IMPORTED_MODULE_2__.city.value = \"\"\n})\n\n_dom__WEBPACK_IMPORTED_MODULE_2__.city.addEventListener(\"keydown\", (event)=>{\n  if(event.key === \"Enter\")\n  (0,_data__WEBPACK_IMPORTED_MODULE_3__.default)()\n})\n\n\n;(0,_data__WEBPACK_IMPORTED_MODULE_3__.default)()\n\n\n//# sourceURL=webpack://weather_app/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/styles.css */ \"./src/assets/css/styles.css\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n/* harmony import */ var _dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dom */ \"./src/dom.js\");\n/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data */ \"./src/data.js\");\n\n\n\n\n\n_dom__WEBPACK_IMPORTED_MODULE_2__.search.addEventListener('click', ()=>{\n  \n  (0,_data__WEBPACK_IMPORTED_MODULE_3__.default)()\n   _dom__WEBPACK_IMPORTED_MODULE_2__.city.value = \"\"\n})\n\n_dom__WEBPACK_IMPORTED_MODULE_2__.city.addEventListener(\"keydown\", (event)=>{\n  if(event.key === \"Enter\")\n  (0,_data__WEBPACK_IMPORTED_MODULE_3__.default)()\n})\n\n    \n;(0,_data__WEBPACK_IMPORTED_MODULE_3__.default)()\n\n\n//# sourceURL=webpack://weather_app/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/assets/images/bg.jpeg":
+/*!***********************************!*\
+  !*** ./src/assets/images/bg.jpeg ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"681973991af405636734.jpeg\";\n\n//# sourceURL=webpack://weather_app/./src/assets/images/bg.jpeg?");
 
 /***/ })
 
@@ -746,6 +776,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ass
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -771,6 +804,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ass
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -785,6 +830,52 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ass
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /************************************************************************/

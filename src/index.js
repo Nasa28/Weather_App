@@ -3,8 +3,6 @@ import 'bootstrap'
 import * as dom from './dom';
 import fetchData from './data'
 
-
-
 dom.search.addEventListener('click', ()=>{
   
   fetchData()
@@ -16,5 +14,5 @@ dom.city.addEventListener("keydown", (event)=>{
   fetchData()
 })
 
-
+    
 fetchData()

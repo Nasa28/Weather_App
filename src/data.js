@@ -1,9 +1,12 @@
 import * as dom from './dom';
-
+import { apikey } from '../api';
 export default async function fetchData(){
   
   const location= dom.city.value ||'enugu'
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apikey}&units=metric`;
+  const url = `
+  https://api.openweathermap.org/data/2.5/weather?q=
+  ${location}&appid=${apikey}&units=metric
+  `;
 
  try{ const response = await fetch(url, {mode: 'cors'})
     const data = await response.json();
@@ -20,7 +23,10 @@ export default async function fetchData(){
     dom.wind.textContent  = `WIND SPEED: ${windValue}mph`
     dom.icons.src =`https://openweathermap.org/img/wn/${iconValue}.png`
     document.querySelector('.weather').classList.remove("loading");
-
+    
+    const img=`url('https://source.unsplash.com/1600x900/?${cityValue}')
+    `;
+    document.body.style.backgroundImage = img
     
     dom.convert.addEventListener("click", ()=>{
       if(dom.temp.textContent.includes("°F")){
@@ -35,7 +41,9 @@ export default async function fetchData(){
 
   }catch (error){
     if(error){
-      dom.errors.innerHTML = `${dom.city.value.toUpperCase()} is not a valid City name`
+      dom.errors.innerHTML = `${dom.city.value.toUpperCase()}
+       is not a valid City name
+       `
       setTimeout("location.reload(true);",1500);
     }
   }
