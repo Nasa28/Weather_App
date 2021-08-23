@@ -32,28 +32,6 @@ body{
   visibility: hidden;
 }
 
-/* body::after{
-  visibility: visible;
-  content: url('../images/bg.jpeg');
-  contain: layout;
-  /* background: url('../images/bg.jpeg'); */
-/* } */ 
-
-/* body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  background-image:
-    url('../images/bg.jpeg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
 .converter{
   margin-right: 10px;
 }
