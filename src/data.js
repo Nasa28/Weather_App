@@ -1,6 +1,6 @@
 import * as dom from './dom';
 
-const fetchData = async () => {
+let fetchData = async() => {
   const apikey = 'bc92c530991c288d75d5cf2407507597';
   const location = dom.city.value || 'enugu';
   const url = `
@@ -40,10 +40,10 @@ const fetchData = async () => {
     });
   } catch (error) {
     if (error) {
-      dom.errors.innerHTML = `Enter a valid City name
-       `;
+      dom.errors.innerHTML = 'Enter a valid City name';
       setTimeout(location.reload(true), 2000);
     }
   }
 };
+
 export default fetchData();
