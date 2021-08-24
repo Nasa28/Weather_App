@@ -4,13 +4,13 @@ import * as dom from './dom';
 import fetchData from './data';
 
 dom.search.addEventListener('submit', (event) => {
-event.preventDefault()
+  event.preventDefault();
   fetchData();
   dom.city.value = '';
 });
 
 dom.city.addEventListener('keydown', (event) => {
-  event.preventDefault()
+  event.preventDefault();
   if (event.key === 'Enter') fetchData();
 });
 

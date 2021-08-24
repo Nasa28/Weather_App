@@ -1,4 +1,5 @@
 import * as dom from './dom';
+
 const apikey = 'bc92c530991c288d75d5cf2407507597';
 const location = dom.city.value || 'enugu';
 const url = `
