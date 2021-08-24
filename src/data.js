@@ -6,7 +6,7 @@ const url = `
 https://api.openweathermap.org/data/2.5/weather?q=
 ${location}&appid=${apikey}&units=metric
 `;
-const fetchData = async () => {
+export default async function fetchData() {
   try {
     const response = await fetch(url, { mode: 'cors' });
     const data = await response.json();
@@ -43,6 +43,4 @@ const fetchData = async () => {
       setTimeout(location.reload(true), 2000);
     }
   }
-};
-
-export default fetchData();
+}
