@@ -3,14 +3,12 @@ import 'bootstrap';
 import * as dom from './dom';
 import fetchData from './data';
 
-dom.search.addEventListener('submit', (event) => {
-  event.preventDefault();
+dom.search.addEventListener('click', () => {
   fetchData();
   dom.city.value = '';
 });
 
 dom.city.addEventListener('keydown', (event) => {
-  event.preventDefault();
   if (event.key === 'Enter') fetchData();
 });
 

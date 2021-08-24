@@ -1,13 +1,14 @@
 import * as dom from './dom';
 
-const apikey = 'bc92c530991c288d75d5cf2407507597';
-const location = dom.city.value || 'enugu';
-const url = `
-https://api.openweathermap.org/data/2.5/weather?q=
-${location}&appid=${apikey}&units=metric
-`;
-export default async function fetchData() {
+const fetchData = () => async () => {
   try {
+    const apikey = 'bc92c530991c288d75d5cf2407507597';
+    const location = dom.city.value || 'enugu';
+    const url = `
+    https://api.openweathermap.org/data/2.5/weather?q=
+    ${location}&appid=${apikey}&units=metric
+    `;
+
     const response = await fetch(url, { mode: 'cors' });
     const data = await response.json();
     const cityValue = data.name;
@@ -40,7 +41,8 @@ export default async function fetchData() {
   } catch (error) {
     if (error) {
       dom.errors.innerHTML = 'Enter a valid City name';
-      setTimeout(location.reload(true), 2000);
+      setTimeout(Window.location.reload(), 2000);
     }
   }
-}
+};
+export default fetchData();
